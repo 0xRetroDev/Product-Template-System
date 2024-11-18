@@ -1,0 +1,225 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "token",
+				"type": "address"
+			}
+		],
+		"name": "approveToken",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "token",
+				"type": "address"
+			}
+		],
+		"name": "approvedTokens",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "deploymentConfig",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint96",
+						"name": "cost",
+						"type": "uint96"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"internalType": "struct IPromptManager.DeploymentConfig",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "token",
+				"type": "address"
+			}
+		],
+		"name": "disapproveToken",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "discountConfig",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "contract IERC20",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint96",
+						"name": "deploymentCost",
+						"type": "uint96"
+					},
+					{
+						"internalType": "uint32",
+						"name": "feePercentage",
+						"type": "uint32"
+					}
+				],
+				"internalType": "struct IPromptManager.DiscountConfig",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "feeConfig",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint32",
+						"name": "liquidityFeePercentage",
+						"type": "uint32"
+					},
+					{
+						"internalType": "address",
+						"name": "feeAddress",
+						"type": "address"
+					}
+				],
+				"internalType": "struct IPromptManager.FeeConfig",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "isPaused",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "productURI",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint96",
+				"name": "cost",
+				"type": "uint96"
+			},
+			{
+				"internalType": "contract IERC20",
+				"name": "token",
+				"type": "address"
+			}
+		],
+		"name": "setDeploymentConfig",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"internalType": "uint96",
+				"name": "deploymentCost",
+				"type": "uint96"
+			},
+			{
+				"internalType": "uint32",
+				"name": "feePercentage",
+				"type": "uint32"
+			}
+		],
+		"name": "setDiscountConfig",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint32",
+				"name": "liquidityFeePercentage",
+				"type": "uint32"
+			},
+			{
+				"internalType": "address",
+				"name": "feeAddress",
+				"type": "address"
+			}
+		],
+		"name": "setFeeConfig",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "tokenTransferAllowed",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
